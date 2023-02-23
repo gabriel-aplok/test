@@ -1,0 +1,17 @@
+---
+layout: index
+---
+  <div class="home">
+    <div class="home-section">
+	    <h1> Our Games </h1>
+      {% for game in site.games %}
+        <div class="game-icon">
+          <a class="game-index-link" href="{{site.baseurl}}{{game.url}}">
+            <img src="{{game.icon}}" />
+            <h2> {{game.title}} </h2>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
